@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>サモナースペルCDカウンター</title>
+    <script type="text/javascript" src="CDscript.js"></script>
+  </head>
+  <body>
+
+    <p>
+      <FONT size="9" id="nowSec">
+	01'00
+      </FONT>
+      <input type="button" id="Start" value="Start" onclick="startShowing()" style="WIDTH: 80px; HEIGHT: 20px">
+    </p>
+    <p>
+      <input type="button" id="scouter" value="scouter" onclick="window.open('https://lolbuild.jp/scouter/')" style="WIDTH: 80px; HEIGHT: 20px"
+    </p>
+      
+    <p>
+      Top :
+      <select>
+	<option>Normal</option>
+	<option>Ionian Boots</option>
+	<option>Insight</option>
+	<option>Boots + Insight</option>
+      </select>
+
+      Jungle :
+      <select>
+	<option>Normal</option>
+	<option>Ionian Boots</option>
+	<option>Insight</option>
+	<option>Boots + Insight</option>
+      </select>
+
+      Mid :
+      <select>
+	<option>Normal</option>
+	<option>Ionian Boots</option>
+	<option>Insight</option>
+	<option>Boots + Insight</option>
+      </select>
+
+      ADCarry :
+      <select>
+	<option>Normal</option>
+	<option>Ionian Boots</option>
+	<option>Insight</option>
+	<option>Boots + Insight</option>
+      </select>
+
+      Support :
+      <select>
+	<option>Normal</option>
+	<option>Ionian Boots</option>
+	<option>Insight</option>
+	<option>Boots + Insight</option>
+      </select>
+    </p>
+
+    <table id="table" border="1" width="900" height="400" cellspacing="5">
+      <tr align="center">
+	<td><input type="button" id="Clear" value="Clear" style="WIDTH: 64px; HEIGHT: 64px"></td>
+	<td><button><img src="img/spell/Barrier.png" id="Barrier" alt="Barrier"></td>
+	<td><button><img src="img/spell/Cleanse.png" id="Cleanse" alt="Cleanse"></td>
+	<td><button><img src="img/spell/Exhaust.png" id="Exhaust" alt="Exhaust"></td>
+	<td><button><img src="img/spell/Flash.png" id="Flash" alt="Flash"></td>
+	<td><button><img src="img/spell/Ghost.png" id="Ghost" alt="Ghost"></td>
+	<td><button><img src="img/spell/Heal.png" id="Heal" alt="Heal"></td>
+	<td><button><img src="img/spell/Ignite.png" id="Ignite" alt="Ignite"></td>
+	<td><button><img src="img/spell/Teleport.png" id="Teleport" alt="Teleport"></td>
+      </tr>
+      
+      <tr align="center">
+	<td>Normal</td>
+	<td id="normal_B"></td>
+	<td id="normal_C"></td>
+	<td id="normal_E"></td>
+	<td id="normal_F"></td>
+	<td id="normal_G"></td>
+	<td id="normal_H"></td>
+	<td id="normal_I"></td>
+	<td id="normal_T"></td>
+      </tr>
+      <tr align="center">
+	<td><img src="img/Item/item_ionianbootsoflucidity.jpg" alt="boots"></td>
+	<td id="boots_B"></td>
+	<td id="boots_C"></td>
+	<td id="boots_E"></td>
+	<td id="boots_F"></td>
+	<td id="boots_G"></td>
+	<td id="boots_H"></td>
+	<td id="boots_I"></td>
+	<td id="boots_T"></td>
+      </tr>
+      <tr align="center">
+	<td><img src="img/Mastery/Hirameki.png" alt="insight"></td>
+	<td id="insight_B"></td>
+	<td id="insight_C"></td>
+	<td id="insight_E"></td>
+	<td id="insight_F"></td>
+	<td id="insight_G"></td>
+	<td id="insight_H"></td>
+	<td id="insight_I"></td>
+	<td id="insight_T"></td>
+      </tr>
+      <tr align="center">
+	<td><img src="img/Item/item_ionianbootsoflucidity.jpg" alt="boots"><img src="img/Mastery/Hirameki.png" alt="insight"></td>
+	<td id="both_B"></td>
+	<td id="both_C"></td>
+	<td id="both_E"></td>
+	<td id="both_F"></td>
+	<td id="both_G"></td>
+	<td id="both_H"></td>
+	<td id="both_I"></td>
+	<td id="both_T"></td>
+      </tr>
+    </table>
+
+    <p>
+      <button><img src="img/Object/e_dragon.jpg" id="e_dragon" alt="e_dragon" width="100" height="100"></button>
+      <FONT size="7" id="e_dragon_time"></FONT>
+    </p>
+
+    <p>
+      <button><img src="img/Object/baron.jpg" id="baron" alt="baron" width="100" height="100"></button>
+      <FONT size="7" id="baron_time"></FONT>
+    </p>
+  </body>
+</html>
